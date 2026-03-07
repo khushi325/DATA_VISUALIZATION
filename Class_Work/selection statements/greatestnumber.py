@@ -1,29 +1,27 @@
 # Program to find the greatest number among five numbers
+# using if, elif and else statements
 
-# Taking five numbers as input from the user
+# Taking input from the user
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 num3 = float(input("Enter third number: "))
 num4 = float(input("Enter fourth number: "))
 num5 = float(input("Enter fifth number: "))
 
-# Assume the first number is the greatest initially
-greatest = num1
+# Checking which number is the greatest
+if num1 >= num2 and num1 >= num3 and num1 >= num4 and num1 >= num5:
+    greatest = num1
 
-# Compare with second number
-if num2 > greatest:
+elif num2 >= num1 and num2 >= num3 and num2 >= num4 and num2 >= num5:
     greatest = num2
 
-# Compare with third number
-if num3 > greatest:
+elif num3 >= num1 and num3 >= num2 and num3 >= num4 and num3 >= num5:
     greatest = num3
 
-# Compare with fourth number
-if num4 > greatest:
+elif num4 >= num1 and num4 >= num2 and num4 >= num3 and num4 >= num5:
     greatest = num4
 
-# Compare with fifth number
-if num5 > greatest:
+else:
     greatest = num5
 
 # Display the greatest number
